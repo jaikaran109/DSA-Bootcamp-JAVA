@@ -4,7 +4,8 @@ class Solution {
         int[] rows = new int[m];
         int[] cols = new int[n];
 
-        for (int[] idx : indices) {
+        for(int i = 0; i < indices.length; i++){
+            int[] idx = indices[i];
             rows[idx[0]]++;
             cols[idx[1]]++;
         }
